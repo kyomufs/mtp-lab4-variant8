@@ -21,6 +21,10 @@ def compose(*functions: Callable[[Any], Any]) -> Callable[[Any], Any]:
     Returns:
         A callable evaluating the whole chain right to left, or
         the identity function when ``functions`` is empty.
+
+    Example:
+        >>> compose(str.upper, str.strip)("  hi  ")
+        'HI'
     """
 
     def identity(value: Any) -> Any:
