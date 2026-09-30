@@ -2,8 +2,10 @@
 
 from lab4.basics import factorial
 from lab4.timing import timer
+from lab4.transform import map_functions
 
 __all__ = [
     "factorial",
+    "map_functions",
     "timer",
 ]
